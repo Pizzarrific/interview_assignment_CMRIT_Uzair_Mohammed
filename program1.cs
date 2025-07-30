@@ -8,3 +8,14 @@ public class Problem1{
         return false;
     }
 }
+class TestProblem1{
+    static void Main(){
+        int[][] test = {
+            new int[] {3,2,3,9}};
+        foreach(var arr in test){
+            bool result = Problem1.dupe(arr);
+            Console.WriteLine("[" + string.Join(",", arr)+"]-"+result);
+
+        }
+    }
+}
